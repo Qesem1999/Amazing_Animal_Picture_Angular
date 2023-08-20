@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row" style="display: flex; align-items: center; justify-content: center;">
+        <h3 class="mt-5" style="text-align: center;
+        margin: 0px;">Your cart</h3>
+       
+        <div class="list-group mt-1" style="width:65%!important;">
+            <a  *ngFor="let item of cartItems" href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div  class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1">{{item.name}}</h6>
+                <p class="mb-1">{{item.price | currency:'USD'}}</p>
+              </div>
+             
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">TotalPrice</h5>
+                    <p class="mb-1">{{totalPrice | currency:'USD'}}</p>
+                  </div>
+            </a>
+        </div>
+
+        <div style="width: 65%;padding: 8px;display: flex; justify-content: end;">
+            <button class="btn btn-dark mr-2" style="margin-right: 10px;" (click)="clearCart()">Clear</button>
+            <button class="btn btn-warning" (click)="checkout()">Checkout</button>
+        </div>
+        
+       
+    </div>
+   
+</div>

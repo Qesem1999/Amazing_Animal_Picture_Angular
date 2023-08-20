@@ -1,0 +1,20 @@
+
+
+Creates a new Angular project with the specified project name:  ng new projectName
+
+Builds the application and starts a web server to serve your application during development: ng serve
+
+Same as ng serve, but also opens your default web browser to the application: ng serve -o
+
+Generates a new component with the specified name: ng generate component componentName (or) ng g c componentName
+
+Generates a new service with the specified name: ng generate service serviceName (or) ng g s serviceName
+
+Builds your application for production, creating a dist/ folder with the output: ng build
+
+Checks your application for outdated dependencies, and can also update them: ng update
+
+
+ng generate interface models/appointment
+
+ng serve --configuration=development
